@@ -1,19 +1,73 @@
 body{
 	background-color: black;
-	position: relative;
-	background-image: "images/faviconides_2";
+	/*position: relative;*/
 	font-family: 'Raleway';
-/*	border: dotted;
-	border-color: grey;
-	color:white;*/
+	margin: 0px 0px 0px 0px;
 }
+
 p{
 	text-align:center;
-	font-size: 20px
+	font-size: 20px;
+	padding-left: 100px;
+	padding-right: 100px; 
 }
 
 a{
+	color: blue;
+}
+
+ul{
+	list-style: none;
+}
+
+nav{
+	align-content: center;
+}
+
+a:link{
+	text-decoration: none;
+	display: inline-block;
+	background-color: grey;
+	color: black;
+    padding: 10px 10px ;
+    border-radius: 20px;
+}
+
+h1{
+	font-size: 50px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+a:hover{
+	background-color: white;
+	color: black;
+	border-spacing: 10px;
+}
+
+header{
+	background: url("images/head_image.png");
+	background-size: cover;
+	/*To prevent there being any repeat appearance of the image*/
+	height: 100vh;
+	display: flex;
+	/*If there are mutltiple lines, it will make them align in a column*/
+	flex-direction: column;
+	 /*Places the text in the center of the header*/
+	justify-content: center;
+	/*Places the items in the center vertically*/
+	align-items: center;
+	margin-bottom: 50px;
 	color: white;
+}
+
+
+img{
+	align-content: center;
+	width: 300px;
+	height: 300px;
+	max-height: 500px;
+	max-width: 500px;
+	border: white;
 }
 footer{
 	color: rgb(229,228,221);
@@ -28,96 +82,60 @@ footer{
 	width: 100%;
 }
 
-footer:hover{
-	cursor: progress;
+/*Class*/
+.bgGrey{
+	background-color: grey;
+	padding: 20px;
 }
 
-.thankyou{
+.contactme{
 	font-size: 25px;
 }
 
-ul{
-	list-style: none;
+.moreinfo{
+	font-size: 20px;
 }
 
-#navbar{
+/*ID*/
+#h1Fix{
+	font-size: 35px;
+	font-family: 'Raleway'
+}
+
+#thankyou{
+	font-size: 25px;
+}
+
+#bigtext{
+	color: white;
+	text-align: center;
+	padding: 100px;
+}
+
+#bgText{
+	background: lightgrey;
+}
+
+#navBar{
 	display: inline;
 	float: left;
 	padding: 8px;
 	text-align: center;
 }
 
-#navbarblock{
+#navBarBlock{
 	display: inline-block;
 	border-radius: 0px;
 }
-#navbarblock:hover{
+
+#navBarBlock:hover{
 	color: red;
 }
 
-nav{
-	align-content: center;
-}
-.contactme{
-	font-size: 25px;
-}
-a:link{
-	text-decoration: none;
-	display: inline-block;
-	background-color: grey;
-	color: white;
-    padding: 10px 10px ;
-    border-radius: 20px;
-}
-
-a:hover{
-	background-color: white;
-	color: black;
-}
-
-.backgroundgrey{
-	background-color: grey;
-	padding: 20px;
-}
-#heading{
-	background-color: white;
-}
-
-header{
-	padding: 20px;
-}
-
-.color{
-	font-color: blue;
-}
-
-#bigtext{
-	color: white;
-	position: relative;
-	text-align: center;
-}
-img{
-	align-content: center;
-	width: 300px;
-	height: 300px;
-	max-height: 500px;
-	max-width: 500px;
-	border: white;
-	background-image: "images/faviconides_2";
-}
-#backgroundtext{
-	background: lightgrey;
-}
 #homeimage{
-	background-color: lightgrey; 
-}
-.moreinfo{
-	font-size: 20px;
+	background-color: lightgrey;
 }
 
-#spacing{
-	border-spacing: 5px;
-}
 
 #navigationbar{
 	color: white;
