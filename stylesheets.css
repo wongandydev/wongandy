@@ -41,6 +41,7 @@ div, h1{
 }
 
 header{
+	color: blue;
 	background: url("images/head_image.png");
 	background-size: cover;
 	/*To prevent there being any repeat appearance of the image*/
@@ -53,7 +54,7 @@ header{
 	/*Places the items in the center vertically*/
 	align-items: center;
 	margin-bottom: 0px;
-	color: white;
+	
 }
 
 
@@ -123,6 +124,10 @@ footer{
 }
 
 /*ID*/
+
+#headingText{
+	color: black;
+}
 #h1Fix{
 	font-size: 35px;
 	font-family: 'Raleway'
