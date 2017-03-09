@@ -21,6 +21,11 @@ header a:link{
 	padding: 10px;
 }
 
+header a:visited{
+	color: white;
+	text-decoration: none;
+}
+
 header h1{
 	color: rgb(214,214,214);
 }
@@ -56,11 +61,6 @@ a:link{
 	padding: 10px;
 }
 
-a:visited{
-	text-decoration: none;
-	color:white;
-}
-
 img{
 	position: relative;
 }
@@ -94,9 +94,10 @@ footer{
 	/*Sticky Footer*/
 	position: relative;
 	height: 100%;
-/*	bottom: 0;
-	left: 0;*/
 	width: 100%;
+	font-size: 20px;
+	margin: 0px auto;
+	padding-top: 10px;
 
 }
 
@@ -104,6 +105,15 @@ footer a:link{
 	background-color: rgb(229,229,229);
 	opacity: 0.5;
 }
+
+footer a:hover{
+	background-color: white; 
+	opacity: 0.9;
+}
+
+footer a:visited{
+	color: black;
+	}
 
 /*Class*/
 
@@ -114,24 +124,6 @@ footer a:link{
 	padding: 100px;
 }
 
-/*
-.thingsToCheckOut{
-	background-color: grey;
-	color: white;
-	text-align: center;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	border-bottom: 1px solid white;
-}
-
-.thingsToCheckOut a:hover{
-	background-color: white;
-	color: black;
-	border-spacing: 10px;
-}
-*/
 .contactme{
 	font-size: 25px;
 }
@@ -152,34 +144,6 @@ footer a:link{
 .image h1 {
 	font-size: 40px;
 	line-height: 20px;
-}
-
-.overlay{
-	opacity: 0;
-	position: absolute;
-	top:0;
-	bottom:0;
-	left: 0;
-	color: black;
-	width: 100%;
-}
-
-.overlay:hover{
-	opacity: 1;
-/*	-webkit-filter:blur(2px);
-	filter: blur(2px);*/
-}
-
-.moreinfo{
-	font-size: 20px;
-	text-align: center;
-	margin: 0px auto;
-	padding-top: 10px;
-}
-
-.moreinfo a:hover{
-	background-color: white; 
-	opacity: 0.9;
 }
 
 /*ID*/
