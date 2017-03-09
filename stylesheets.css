@@ -25,10 +25,13 @@ nav{
 a:link{
 	text-decoration: none;
 	display: inline-block;
-	background-color: grey;
 	color: black;
-    padding: 10px 10px ;
-    border-radius: 20px;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+img{
+	position: relative;
 }
 
 h1{
@@ -41,11 +44,11 @@ div, h1{
 }
 
 header{
-	color: blue;
 	background: url("images/head_image.png");
 	background-size: cover;
 	/*To prevent there being any repeat appearance of the image*/
 	height: 100vh;
+	width: 100%;
 	display: flex;
 	/*If there are mutltiple lines, it will make them align in a column*/
 	flex-direction: column;
@@ -54,9 +57,11 @@ header{
 	/*Places the items in the center vertically*/
 	align-items: center;
 	margin-bottom: 0px;
-	
 }
 
+header h1{
+	color: rgb(214,214,214);
+}
 
 img{
 	align-content: center;
@@ -74,28 +79,30 @@ footer{
 	color: rgb(229,228,221);
 	font-family: Helvetica;
 	text-align: center;
-	background: red;
+	background: rgb(120,120,120);
 	/*Sticky Footer*/
 	position: relative;
 	height: 100%;
-	bottom: 0;
-	left: 0;
+/*	bottom: 0;
+	left: 0;*/
 	width: 100%;
+
+}
+
+footer a:link{
+	background-color: rgb(229,229,229);
+	opacity: 0.5;
 }
 
 /*Class*/
 
-.image{
-	background: grey;
+
+.pageInWork{
+	background-color: black;
 	text-align: center;
-	padding: 1px;
-	margin: 0px auto;
+	padding: 100px;
 }
-
-.image a:hover{
-	opacity: 0.5;
-}
-
+/*
 .thingsToCheckOut{
 	background-color: grey;
 	color: white;
@@ -112,22 +119,63 @@ footer{
 	color: black;
 	border-spacing: 10px;
 }
-
+*/
 .contactme{
 	font-size: 25px;
 }
 
+.image{
+	background: rgb(69,69,69);
+	text-align: center;
+	padding: 1px;
+	margin: 0px auto;
+	padding-bottom: 30px;
+	/*object-fit: fill;*/
+}
+
+.image a:hover{
+	opacity: 0.5;
+}
+
+.image h1 {
+	font-size: 40px;
+	line-height: 20px;
+}
+
+.overlay{
+	opacity: 0;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	color: black;
+	width: 100%;
+}
+
+.overlay h2{
+
+}
+
+.overlay:hover{
+	opacity: 1;
+	-webkit-filter:blur(2px);
+	filter: blur(2px);
+}
+
 .moreinfo{
 	font-size: 20px;
+	text-align: center;
 	margin: 0px auto;
-	padding: 10px;
+	padding-top: 10px;
+}
+
+.moreinfo a:hover{
+	background-color: white; 
+	opacity: 0.9;
 }
 
 /*ID*/
 
-#headingText{
-	color: black;
-}
 #h1Fix{
 	font-size: 35px;
 	font-family: 'Raleway'
@@ -148,11 +196,6 @@ footer{
 	background: lightgrey;
 }
 
-#pageInWork{
-	background-color: black;
-	text-align: center;
-	padding: 100px;
-}
 
 #navBar{
 	display: inline;
@@ -174,6 +217,9 @@ footer{
 	background-color: lightgrey;
 }
 
+#footerLinkPadding{
+	padding: 10px 10px ;
+}
 
 #navigationbar{
 	color: white;
