@@ -117,6 +117,36 @@ footer a:visited{
 
 /*Class*/
 
+.topNav{
+	background-color: grey;
+	overflow: hidden; /*Find out what this does*/
+	position: fixed;
+	width: 100%;
+}
+
+/*To change the order, use nav class, and use ul and li to change 
+use float right for nav and float left for li*/
+
+.topNav a{
+	float: right;
+	display: block;
+	border-radius: 0px;
+	color: white;
+	text-align: right;
+	padding: 14px 16px; /*top bottom are 14px left right are 16px*/
+	text-decoration: none; /*removes underline*/
+	font-size: 16px;
+}
+
+.topNav a:hover{
+	background-color: white;
+	color: black;
+}
+
+.topNav a.active{
+	background-color: white;
+	color: black;
+}
 
 .pageInWork{
 	background-color: black;
@@ -145,6 +175,7 @@ footer a:visited{
 	font-size: 40px;
 	line-height: 20px;
 }
+
 
 /*ID*/
 
