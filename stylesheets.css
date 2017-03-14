@@ -10,7 +10,7 @@ header{
 	 /*Places the text in the center of the header*/
 	justify-content: center;
 	/*Places the items in the center vertically*/
-	align-items: center;
+	text-align: center;
 	margin-bottom: 0px;
 }
 
@@ -27,7 +27,7 @@ header a:visited{
 }
 
 header h1{
-	color: rgb(214,214,214);
+	color: rgb(214,214,214); 
 }
 
 body{
@@ -115,7 +115,7 @@ footer a:visited{
 
 .topNav{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	font-family: 'Raleway:500', sans-serif;
 }
@@ -153,6 +153,7 @@ footer a:visited{
 .pageInWork{
 	background-color: black;
 	text-align: center;
+	position: relative;
 	padding: 100px;
 	font-family: 'Raleway';
 }

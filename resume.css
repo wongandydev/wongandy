@@ -17,7 +17,6 @@ a{
 
 a:hover{
 	color: rgb(249,255,254);
-	text-shadow: 2px black;
 }
 
 h3 {
@@ -69,3 +68,17 @@ p {
 .topNav a:active{
 	color: rgb(247,255,251);
 }
+
+.bottom{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.bottom p{
+	text-align: center;
+	align-content: center;
+	width: 100%;
+}
+
+
