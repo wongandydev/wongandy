@@ -35,6 +35,7 @@ p {
 .topNav{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
 	position: fixed;
+	top:0;
 	width: 100%;
 	font-family: 'Raleway:500', sans-serif;
 }
