@@ -1,6 +1,6 @@
 header{
-	background: url("images/head_image.png");
-	background-size: cover;
+	background: url("images/headImage4.jpg");
+	background-size: contain;
 	/*To prevent there being any repeat appearance of the image*/
 	height: 100vh;
 	width: 100%;
@@ -114,8 +114,7 @@ footer a:visited{
 /*Class*/
 
 .topNav{
-	background-color: grey;
-	overflow: hidden; /*Find out what this does*/
+	overflow: hidden; /*Hides contents that extends beyong the box*/
 	position: fixed;
 	width: 100%;
 }
@@ -135,7 +134,7 @@ footer a:visited{
 .topNav ul li a{
 	display: block;
 	border-radius: 0px;
-	color: white;
+	color: grey;
 	text-align: center;
 	padding: 14px 16px; /*top bottom are 14px left right are 16px*/
 	text-decoration: none; /*removes underline*/
@@ -143,13 +142,11 @@ footer a:visited{
 }
 
 .topNav a:hover{
-	background-color: white;
-	color: black;
+	color: rgb(247,255,251);
 }
 
 .topNav a:active{
-	background-color: white;
-	color: black;
+	color: rgb(247,255,251);
 }
 
 .pageInWork{
