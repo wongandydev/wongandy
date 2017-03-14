@@ -1,6 +1,6 @@
 header{
 	background: url("images/headImage4.jpg");
-	background-size: contain;
+	background-size: cover;
 	/*To prevent there being any repeat appearance of the image*/
 	height: 100vh;
 	width: 100%;

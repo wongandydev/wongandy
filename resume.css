@@ -1,23 +1,32 @@
 body{
 	font-family: 'Raleway';
 	text-align: center;
+	color: white;
 }
 
-body a{
+html{
+	background-color: rgb(60,60,64);
+}
+
+a{
 	text-decoration: none;
 	font-size: 20px;
-	color: grey;
+	color: rgb(224,229,229);
 	font-family: 'Butler'
 }
 
-h4 {
-	text-align: left;
-}
-body a:hover{
-	color: black;
+a:hover{
+	color: rgb(249,255,254);
 	text-shadow: 2px black;
+}
+
+h3 {
+	text-align: left;
+	font-family: 'Raleway' , sans-serif;
 }	
 
 p {
-
+	padding-left: 30px;
+	padding-right: 20px;
+	text-align: left;
 }
