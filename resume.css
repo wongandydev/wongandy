@@ -1,8 +1,23 @@
 body{
 	font-family: 'Raleway';
-
+	text-align: center;
 }
 
-body h1{
-	text-align: center;
+body a{
+	text-decoration: none;
+	font-size: 20px;
+	color: grey;
+	font-family: 'Butler'
+}
+
+h4 {
+	text-align: left;
+}
+body a:hover{
+	color: black;
+	text-shadow: 2px black;
+}	
+
+p {
+
 }
