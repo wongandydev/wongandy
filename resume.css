@@ -22,11 +22,49 @@ a:hover{
 
 h3 {
 	text-align: left;
-	font-family: 'Raleway' , sans-serif;
+	font-family: 'Raleway:400', sans-serif;
 }	
 
 p {
 	padding-left: 30px;
 	padding-right: 20px;
 	text-align: left;
+}
+
+
+.topNav{
+	overflow: hidden; /*Hides contents that extends beyong the box*/
+	position: fixed;
+	width: 100%;
+	font-family: 'Raleway:500', sans-serif;
+}
+
+.topNav ul{
+	list-style-type: none; /*Removes the bullets in a list*/
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+
+.topNav ul li{
+	display: inline;
+	float: left;
+}
+
+.topNav ul li a{
+	display: block;
+	border-radius: 0px;
+	color: grey;
+	text-align: center;
+	padding: 14px 16px; /*top bottom are 14px left right are 16px*/
+	text-decoration: none; /*removes underline*/
+	font-size: 16px;
+}
+
+.topNav a:hover{
+	color: rgb(247,255,251);
+}
+
+.topNav a:active{
+	color: rgb(247,255,251);
 }
