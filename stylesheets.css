@@ -115,7 +115,7 @@ footer a:visited{
 
 .topNav{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	font-family: 'Raleway:500', sans-serif;
 }
@@ -153,9 +153,9 @@ footer a:visited{
 .pageInWork{
 	background-color: black;
 	text-align: center;
-	position: relative;
-	padding: 100px;
+	padding: 20px;
 	font-family: 'Raleway';
+
 }
 
 .contactme{
