@@ -14,7 +14,18 @@ Don't worry, I did not include the blank webpage or Not Found Error 404 as part 
 ![](/screenshots/wongandyStage1.png?raw=true)
 <br>
 <b>Stage 2:</b>
-![](/screenshots/wongandyStage2_pt1.png?raw=true)
 <br>
-
-<b>Stage 3:</b><br>
+1.![1](/screenshots/wongandyStage2_pt1.png?raw=true)
+<br>
+2.![](/screenshots/wongandyStage2_pt2.png?raw=true)
+<br>
+3.![](/screenshots/wongandyStage2_pt3.png?raw=true)
+<br>
+<b>Stage 3:</b>
+<br>
+1.![](/screenshots/wongandyStage3_pt1.png?raw=true)
+<br>
+2.![](/screenshots/wongandyStage3_pt2.png?raw=true)
+<br>
+3.![](/screenshots/wongandyStage3_pt3.png?raw=true)
+<br>
