@@ -11,7 +11,7 @@ Currently I am using to provide several links to my other works and to include a
 Don't worry, I did not include the blank webpage or Not Found Error 404 as part of the stages!
 
 <b>Stage 1:</b>
-![](/screenshots/wongandyStage1.png?raw=true "EventChat")
+![](/screenshots/wongandyStage1.png)
 <br>
 <b>Stage 2:</b><br>
 
