@@ -2,6 +2,8 @@ body{
 	font-family: 'Raleway';
 	text-align: center;
 	color: white;
+	padding: 0;
+	margin: 0;
 }
 
 html{
@@ -20,6 +22,7 @@ a:hover{
 
 h3 {
 	text-align: left;
+	padding: 5px;
 	font-family: 'Raleway:400', sans-serif;
 }	
 
@@ -27,13 +30,18 @@ p {
 	padding-left: 30px;
 	text-align: left;
 }
-
+object {
+	background-color: white;
+}
 
 .topNav{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
 	position: fixed;
 	width: 100%;
 	font-family: 'Raleway:500', sans-serif;
+	background-color: white;
+	padding: 0;
+	margin: 0;
 }
 
 .topNav ul{
@@ -51,7 +59,7 @@ p {
 .topNav ul li a{
 	display: block;
 	border-radius: 0px;
-	color: grey;
+	color: rgb(127,127,127);
 	text-align: center;
 	padding: 14px 16px; /*top bottom are 14px left right are 16px*/
 	text-decoration: none; /*removes underline*/
@@ -59,7 +67,7 @@ p {
 }
 
 .topNav a:hover{
-	color: rgb(247,255,251);
+	color: rgb(64,64,64);
 }
 
 .topNav a:active{
@@ -74,6 +82,7 @@ p {
 
 .bottom p{
 	text-align: center;
+	align-content: center;
 	width: 100%;
 }
 
