@@ -57,11 +57,7 @@ nav{
 
 a:link{
 	text-decoration: none;
-<<<<<<< HEAD
 	display: inline-block;
-=======
-	display: inlin;
->>>>>>> master
 }
 
 h1{
@@ -91,6 +87,7 @@ footer{
 	font-family: Helvetica;
 	text-align: center;
 	background: rgb(120,120,120);
+
 	/*Sticky Footer*/
 	position: relative;
 	height: 100%;
@@ -102,21 +99,14 @@ footer{
 }
 
 footer a:link{
-<<<<<<< HEAD
-=======
 	font-weight: lighter;
->>>>>>> master
 	color: black;
 	opacity: 1;
 	margin-right: 10px;
 }
 
 footer a:hover{ 
-<<<<<<< HEAD
-	opacity: 0.6;
-=======
 	opacity: 0.8;
->>>>>>> master
 }
 
 footer a:visited{
@@ -158,13 +148,10 @@ footer a:visited{
 }
 
 .navBar a:hover{
-<<<<<<< HEAD
 	color: rgb(247,255,251);
 }
 
 .navBar a:active{
-=======
->>>>>>> master
 	color: rgb(247,255,251);
 }
 
@@ -196,70 +183,12 @@ footer a:visited{
 
 .sec2{
 	background: rgb(120,120,120);
-<<<<<<< HEAD
 	text-align: center;
 	padding: 1px;
 	margin: 0px auto;
 	padding-bottom: 30px;
 }
 
-.sec2 h1{
-	color: white;
-}
-
-.sec3{
-	background: rgb(69,69,69);
-	text-align: center;
-	padding: 1px;
-	margin: 0px auto;
-	padding-bottom: 30px;
-}
-
-.image{
-	background: rgb(69,69,69);
-=======
->>>>>>> master
-	text-align: center;
-	padding: 1px;
-	margin: 0px auto;
-	padding-bottom: 30px;
-}
-
-<<<<<<< HEAD
-.image a{
-	position: relative;
-	width: 300px;
-	height: 300px;
-	max-height: 500px;
-	max-width: 500px;
-}
-
-/*.image a:hover{
-	opacity: 0.5;
-}*/
-
-.image a #txtInImage{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: grey;
-	width: 300px;
-	height: 300px;
-	background-color: grey;
-	text-decoration: none;
-	font-size: 50px;
-	font-family: Raleway;
-	font-weight: bold;
-	opacity: 0;
-	visibility: hidden;
-}
-
-.image a:hover #txtInImage{
-	visibility: visible;
-	opacity: 1;
-=======
 .sec2 h1{
 	color: white;
 }
@@ -295,8 +224,6 @@ footer a:visited{
 	padding-left: 40px;
 	padding-right: 40px;
 	word-wrap: break-word;
-
->>>>>>> master
 }
 
 .sec4 h1{
@@ -307,19 +234,14 @@ footer a:visited{
 
 /*ID*/
 
-<<<<<<< HEAD
-
-
-#h1Fix{
-=======
-#container1{
+#container1{ /*Tiles*/
 	display: inline-block;
 	vertical-align: top;
-	text-align: justify-al;
+	text-align: justify-all;
 	width: 300px;
 }
 
-#container2{
+#container2{ 
 	display: inline-block;
 	/*border-style: dotted;*/
 	vertical-align: top;
@@ -327,15 +249,13 @@ footer a:visited{
 }
 
 #aboutMeH1{
->>>>>>> master
 	font-size: 35px;
-	font-family: 'Raleway'
+	font-family: 'Raleway';
 }
 
 #h2Font{
-	font-family: 'Raleway'
+	font-family: 'Raleway';
 	font-size: 35px;
-	/*font-weight: lighter;*/
 }
 
 #thankyou{
@@ -365,17 +285,7 @@ footer a:visited{
 	background-color: lightgrey;
 }
 
-<<<<<<< HEAD
-#navigationbar{
-	color: white;
-	background-color: red;
-}
-
-#textInImage {
-
-=======
 #description {
 	font-size: 13px;
 	word-wrap: break-word;
->>>>>>> master
 }
