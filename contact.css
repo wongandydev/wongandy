@@ -1,0 +1,91 @@
+body{
+	font-family: 'Raleway';
+	text-align: center;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	background-color: rgb(60,60,64);
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: rgb(224,229,229);
+}
+
+a:hover{
+	color: rgb(249,255,254);
+}
+
+h3 {
+	text-align: left;
+	padding: 5px;
+	font-family: 'Raleway:400', sans-serif;
+}	
+
+p {
+	padding-left: 30px;
+	text-align: left;
+}
+object {
+	background-color: white;
+}
+
+.topNav{
+	overflow: hidden; /*Hides contents that extends beyong the box*/
+	position: fixed;
+	width: 100%;
+	font-family: 'Raleway:500', sans-serif;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.topNav ul{
+	list-style-type: none; /*Removes the bullets in a list*/
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+
+.topNav ul li{
+	display: inline;
+	float: left;
+}
+
+.topNav ul li a{
+	display: block;
+	border-radius: 0px;
+	color: rgb(127,127,127);
+	text-align: center;
+	padding: 14px 16px; /*top bottom are 14px left right are 16px*/
+	text-decoration: none; /*removes underline*/
+	font-size: 16px;
+}
+
+.topNav a:hover{
+	color: rgb(64,64,64);
+}
+
+.topNav a:active{
+	color: rgb(247,255,251);
+}
+
+.bottom{
+	position: rela;
+	bottom: 0;
+	width: 100%;
+}
+
+.bottom p{
+	text-align: center;
+	align-content: center;
+	width: 100%;
+}
+
+.bottom p a{
+	font-family: 'Butler';
+}

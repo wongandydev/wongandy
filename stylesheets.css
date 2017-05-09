@@ -41,10 +41,6 @@ p{
 	font-size: 20px;
 }
 
-a{
-	color: blue;
-}
-
 nav{
 	align-content: center;
 }
@@ -52,13 +48,6 @@ nav{
 a:link{
 	text-decoration: none;
 	display: inline-block;
-	color: black;
-	border-radius: 30px;
-	padding: 10px;
-}
-
-img{
-	position: relative;
 }
 
 h1{
@@ -76,6 +65,7 @@ img{
 	height: 300px;
 	max-height: 500px;
 	max-width: 500px;
+	position: relative;
 }
 
 img:hover{
@@ -98,41 +88,41 @@ footer{
 }
 
 footer a:link{
-	background-color: rgb(229,229,229);
-	opacity: 0.5;
+	color: black;
+	opacity: 1;
+	margin-right: 10px;
 }
 
-footer a:hover{
-	background-color: white; 
-	opacity: 0.9;
+footer a:hover{ 
+	opacity: 0.6;
 }
 
 footer a:visited{
 	color: black;
-	}
+}
 
 /*Class*/
 
-.topNav{
+.navBar{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
 	position: fixed;
 	width: 100%;
 	font-family: 'Raleway:500', sans-serif;
 }
 
-.topNav ul{
+.navBar ul{
 	list-style-type: none; /*Removes the bullets in a list*/
 	padding: 0;
 	margin: 0;
 	float: right;
 }
 
-.topNav ul li{
+.navBar ul li{
 	display: inline;
 	float: left;
 }
 
-.topNav ul li a{
+.navBar ul li a{
 	display: block;
 	border-radius: 0px;
 	color: grey;
@@ -142,11 +132,11 @@ footer a:visited{
 	font-size: 16px;
 }
 
-.topNav a:hover{
+.navBar a:hover{
 	color: rgb(247,255,251);
 }
 
-.topNav a:active{
+.navBar a:active{
 	color: rgb(247,255,251);
 }
 
@@ -154,12 +144,34 @@ footer a:visited{
 	background-color: black;
 	text-align: center;
 	padding: 20px;
+	padding-left: 90px;
+	padding-right: 90px; 
 	font-family: 'Raleway';
 
 }
 
 .contactme{
 	font-size: 25px;
+}
+
+.sec2{
+	background: rgb(120,120,120);
+	text-align: center;
+	padding: 1px;
+	margin: 0px auto;
+	padding-bottom: 30px;
+}
+
+.sec2 h1{
+	color: white;
+}
+
+.sec3{
+	background: rgb(69,69,69);
+	text-align: center;
+	padding: 1px;
+	margin: 0px auto;
+	padding-bottom: 30px;
 }
 
 .image{
@@ -171,8 +183,39 @@ footer a:visited{
 	/*object-fit: fill;*/
 }
 
-.image a:hover{
+.image a{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	max-height: 500px;
+	max-width: 500px;
+}
+
+/*.image a:hover{
 	opacity: 0.5;
+}*/
+
+.image a #txtInImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: grey;
+	width: 300px;
+	height: 300px;
+	background-color: grey;
+	text-decoration: none;
+	font-size: 50px;
+	font-family: Raleway;
+	font-weight: bold;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.image a:hover #txtInImage{
+	visibility: visible;
+	opacity: 1;
 }
 
 .image h1 {
@@ -182,6 +225,8 @@ footer a:visited{
 
 
 /*ID*/
+
+
 
 #h1Fix{
 	font-size: 35px;
@@ -224,11 +269,11 @@ footer a:visited{
 	background-color: lightgrey;
 }
 
-#footerLinkPadding{
-	padding: 10px 10px ;
-}
-
 #navigationbar{
 	color: white;
 	background-color: red;
+}
+
+#textInImage {
+
 }
