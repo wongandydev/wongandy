@@ -98,13 +98,14 @@ footer{
 }
 
 footer a:link{
+	font-weight: lighter;
 	color: black;
 	opacity: 1;
 	margin-right: 10px;
 }
 
 footer a:hover{ 
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 footer a:visited{
@@ -244,6 +245,12 @@ footer a:visited{
 #aboutMeH1{
 	font-size: 35px;
 	font-family: 'Raleway'
+}
+
+#h2Font{
+	font-family: 'Raleway'
+	font-size: 35px;
+	/*font-weight: lighter;*/
 }
 
 #thankyou{
