@@ -98,6 +98,11 @@ footer{
 
 }
 
+footer img{
+	width: 32px;
+	height: 32px;
+}
+
 footer a:link{
 	font-weight: lighter;
 	color: black;
