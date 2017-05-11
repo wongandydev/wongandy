@@ -110,6 +110,7 @@ footer a:visited{
 .navBar{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
 	position: fixed;
+	top:0;
 	width: 100%;
 	height: 45px;
 	font-family: 'Raleway:500', sans-serif;
@@ -189,7 +190,28 @@ footer a:visited{
 }
 
 .sec3{
-	background-color: black;
+	background: black;
+	text-align: center;
+	padding: 1px;
+	margin: 0px auto;
+	padding-bottom: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	word-wrap: break-word;
+}
+
+.sec3 a:hover{
+	opacity: 0.9;
+}
+
+.sec3 h1{
+	font-size: 40px;
+	line-height: 20px;
+
+}
+
+.sec4{
+	background-color: rgb(69,69,69);
 	text-align: center;
 	align-items: center;
 	margin: 0px auto;
@@ -200,7 +222,7 @@ footer a:visited{
 	word-wrap: break-word;
 }
 
-.sec3 a{
+.sec4 a{
 	color: white;
 	padding: 10px;
 	text-align: center;
@@ -211,31 +233,15 @@ footer a:visited{
 	display: inline-block;
 }
 
-.sec3 a:hover{
+.sec4 a:hover{
 	opacity: 0.9;
 }
 
-.sec3 p{
+.sec4 p{
 	padding-left: 50px;
 	padding-right: 50px;
 }
 
-.sec4{
-	background: rgb(69,69,69);
-	text-align: center;
-	padding: 1px;
-	margin: 0px auto;
-	padding-bottom: 30px;
-	padding-left: 40px;
-	padding-right: 40px;
-	word-wrap: break-word;
-}
-
-.sec4 h1{
-	font-size: 40px;
-	line-height: 20px;
-
-}
 
 /*ID*/
 
@@ -278,13 +284,6 @@ footer a:visited{
 	background: lightgrey;
 }
 
-
-/*#navBar{
-	display: inline;
-	float: left;
-	padding: 8px;
-	text-align: center;
-}*/
 
 #homeimage{
 	background-color: lightgrey;
