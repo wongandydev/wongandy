@@ -52,7 +52,7 @@ a:link{
 	display: inline-block;
 }
 
-nav{
+nav ul{
 	visibility:visible;
 }
 
@@ -120,45 +120,8 @@ footer a:visited{
 
 /*Class*/
 
-.navBar{
-	overflow: hidden; /*Hides contents that extends beyong the box*/
-	position: fixed;
-	top:0;
-	width: 100%;
-	height: 45px;
-	font-family: 'Raleway:500', sans-serif;
-/*	background-color: black;
-	z-index: 1;*/
-}
-
-.navBar ul{
-	list-style-type: none; /*Removes the bullets in a list*/
-	padding: 0;
-	margin: 0;
-	float: right;
-}
-
-.navBar ul li{
-	display: inline;
-	float: left;
-}
-
-.navBar ul li a{
-	display: block;
-	border-radius: 0px;
-	color: grey;
-	text-align: center;
-	padding: 14px 16px; /*top bottom are 14px left right are 16px*/
-	text-decoration: none; /*removes underline*/
-	font-size: 16px;
-}
-
-.navBar a:hover{
-	color: rgb(247,255,251);
-}
-
-.navBar a:active{
-	color: rgb(247,255,251);
+.navbar{
+	margin-bottom: 0px;
 }
 
 .aboutMe{
