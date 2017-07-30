@@ -131,8 +131,8 @@ footer a:visited{
 	font-family: 'Raleway';
 	margin: 0px auto;
 	word-wrap: break-word;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: 60px;
+	padding-left: 60px;
 }
 
 .aboutMe h2{
@@ -198,8 +198,8 @@ footer a:visited{
 	margin: 0px auto;
 	padding: 1px;
 	padding-bottom: 30px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 70px;
+	padding-right: 70px;
 	word-wrap: break-word;
 }
 
@@ -226,6 +226,11 @@ footer a:visited{
 
 /*ID*/
 
+#quoteWrap{
+	padding-left: 400px;
+	padding-right: 400px;
+}
+
 #container1{ /*Tiles*/
 	display: inline-block;
 	vertical-align: top;
@@ -236,6 +241,12 @@ footer a:visited{
 #container2{ 
 	display: inline-block;
 	/*border-style: dotted;*/
+	vertical-align: top;
+	text-align: justify-all;
+}
+
+#container3{ /*Tiles*/
+	display: inline-block;
 	vertical-align: top;
 	text-align: justify-all;
 }
