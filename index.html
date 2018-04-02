@@ -2,39 +2,47 @@
 <html>
 	<head>
 		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-TKJ7LCM');</script>
+		})(window,document,'script','dataLayer','GTM-TKJ7LCM');
+		</script>
 		<!-- End Google Tag Manager -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<title>Home Page | Andy Wong</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="stylesheets.css">
+
+		<!-- Link to CSS + .JS -->
+		<link rel="stylesheet" type="text/css" href="css/stylesheets.css">
+		<script type="text/javascript" src="main.js"></script>
 <!-- favIcon -->
-			<link rel="apple-touch-icon" sizes="57x57" href="favIcon/apple-icon-57x57.png">
-			<link rel="apple-touch-icon" sizes="60x60" href="favIcon/apple-icon-60x60.png">
-			<link rel="apple-touch-icon" sizes="72x72" href="favIcon/apple-icon-72x72.png">
-			<link rel="apple-touch-icon" sizes="76x76" href="favIcon/apple-icon-76x76.png">
-			<link rel="apple-touch-icon" sizes="114x114" href="favIcon/apple-icon-114x114.png">
-			<link rel="apple-touch-icon" sizes="120x120" href="favIcon/apple-icon-120x120.png">
-			<link rel="apple-touch-icon" sizes="144x144" href="favIcon/apple-icon-144x144.png">
-			<link rel="apple-touch-icon" sizes="152x152" href="favIcon/apple-icon-152x152.png">
-			<link rel="apple-touch-icon" sizes="180x180" href="favIcon/apple-icon-180x180.png">
-			<link rel="icon" type="image/png" sizes="192x192"  href="favIcon/android-icon-192x192.png">
-			<link rel="icon" type="image/png" sizes="32x32" href="favIcon/favicon-32x32.png">
-			<link rel="icon" type="image/png" sizes="96x96" href="favIcon/favicon-96x96.png">
-			<link rel="icon" type="image/png" sizes="16x16" href="favIcon/favicon-16x16.png">
-			<link rel="manifest" href="favIcon/manifest.json">
-			<meta name="msapplication-TileColor" content="#ffffff">
-			<meta name="msapplication-TileImage" content="favIcon/ms-icon-144x144.png">
-			<meta name="theme-color" content="#ffffff">
-
-			<script type="text/javascript" src="javascript.js"></script>	
-
+		<link rel="apple-touch-icon" sizes="57x57" href="favIcon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favIcon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favIcon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favIcon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favIcon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favIcon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favIcon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favIcon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favIcon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="favIcon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favIcon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favIcon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favIcon/favicon-16x16.png">
+		<link rel="manifest" href="favIcon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="favIcon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+<!-- End of favIcon -->
 	</head>
 
 	<body>
@@ -42,85 +50,101 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKJ7LCM"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-
-		<nav>
-			<div class="navBar">
-				<ul>
-					<li><a href="#home"> Top </a></li>
-					<li><a href="#info"> Info </a></li>
-					<li><a href="#projects"> Project </a></li>
-					<li><a href="#interest"> Interests </a></li>
-					<LI><a href="#work"> Work </a></LI>
-					<li><a href="/contact.html"> Contact </a></li>
-					<li><a href="/Resume.pdf" target="_blank"> CV </a></li>
-				</ul>
+		
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid" id="navfluid">
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+				       <span class="sr-only">Toggle navigation</span>
+				       <span class="icon-bar"></span>
+				       <span class="icon-bar"></span> 
+				       <span class="icon-bar"></span>
+      				</button>
+					<a class="navbar-brand" href="index.html"> Andy Wong</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navigationbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="active" href="#info"> Info </a></li>
+						<li><a class=".page-scroll" href="#projects"> Project </a></li>
+						<li><a href="#interest"> Interests </a></li>
+						<li><a href="#work"> Work </a></li>
+						<li><a href="#contact"> Contact </a></li>
+						<li><a href="/wongandy/Resume.pdf" target="_blank"> CV </a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
+
 		<a name="home"></a>
+		
 		<header>
 			<h1> Andy Wong</h1>
 			<h1> Developer, Student, Photographer</h1>
-			<h4><a href="/contact.html"> Contact Me </a></h4>
+			<h4><a href="mailto:wongandy97@gmail.com"> Contact Me </a></h4>
 		</header>
 		<a name="info"></a>
 		<div class="aboutMe">
+			<!-- Add a image of me here -->
 			<h1 id = "aboutMeH1">About Me </h1>
-			<h2>" College Student passionate about Technology, Development, and extremely exited to work in the industry."</h2>
+			<h2>" Andy Wong is a college student passionate about software development, and making ideas come true. He wants to get his foot into the industry"</h2>
 			<p>
-				Currently balancing both School, Development and work. I am trying to learn as I create this site using HTML, CSS, JavaScript, and jQuery. But it does take time to learn and work on it at the same time. Thank you for your understand. The site is currently comming along with incremental updates. You make even see changes in my coming soon page as time goes.
+				Andy Wong is studying Computer Science at St. John's University. Since he was a child he has had a love for technology and computers. Currently, his goal is to get an internship for the summer of 2018. He is currently experience in iOS Development (Swift, ReactiveSwift), Web Development (HTML, CSS, Javascript, jQuery), Java, Python, and SQL. He is actively looking for opportunties, while applying for internships, he continues to pursue personal projects and to make his first iOS Application, EventChat, a greater sucess.
 			</p>
 		</div>
-
 		<a name="projects"></a>
+
 		<div class="sec2">
-			<h1> Projects</h1>
+			<h1 id="h2Font"> Projects</h1>
 			<div id="container1">
 				<a href="https://itunes.apple.com/us/app/eventchat-stay-focused-sharp/id1143401560?mt=8" target="_blank">
 					<img src="images/eventchat.png" alt="EventChat" align = "center"> 
 				</a>
 				<p> EventChat </p>
-				<p id="description"> A simple app I created fdsfsadfasdfsdfsdfsfsdfsdfsdfsdfa;djfsdfsdjfhdjshafdufhjdshjfhadsjhfjkahsdjfhjklsdhfjashdflshdjkfhsdflkjhasdjfhsaldjfhjshf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahef</p>
+				<p id="description"> 
+					A simple app I created with a focus on the events that are about to happen. How many times have you created new group chats just for an event that is happening and you need to add that one or two extra friends to the chat? Well this app solves the problem by creating chats that are based on the event. And, with a tap of a button, you can add the event info into you calendar so you will never forget! 
+				</p>
 			</div>
 			<div id="container1">
-				<a href="" target="_blank">
-					<img src="" alt="100 Days Of Algorithms" align="center">
+				<a href="http://bit.ly/2q2239i" target="_blank">
+					<img src="images/100Days2.png" alt="100 Days Of Algorithms" align="center">
 				</a>
 				<p>100 Days of Algorithms</p>
-				<p id="description"> dfadsk fjsdfd skjfais djfklsdjfk,jkfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefhfjsdjflkdsjfoidsjfialsejfoewhf;oashfohasfha;shf;shf;ahefoha;oefh</p>
+				<p id="description"> An attempt to write code and solve at least one algorithm per day for 100 days. The goal of this project is to end up with 100 days of algorithm completion, enhance coding skills, learn syntax by changing programming languages every 25 algorithms and to just have some fun and learn! Currently, I have used Java. I am currently using Python, and plan to use Javascript next. I am still deciding on the final language.</p>
 			</div>
-		</div>
 
-		<a name="work"></a>
+<!-- 			<div id="container1">
+				<a href="" target="_blank"></a>
+				<p> Days Of Swift</p>
+				<p id="description"> </p>
+			</div> -->
 
-		<div class="sec3">
-			<h1> Work  </h1>
-			<h2> Freelance </h2>
-			<p>
-				fdsjflkdsjfkljsdfjdsfjsdkjfdlskfjksdjfksjfkldfsdfjsdkjfldsnfknsdflksdjf
-			</p>
-			<div id="container2">
-				<a href=""> Fiverr </a>
-			</div>
-			<div id="container2">
-				<a href=""> Upwork </a>
-			</div>
+<!-- 			<div id="container1">
+				<a href="" target="_blank">
+				<img src="" alt="Days Of Swift" align="center">
+				</a>
+				<p>Days Of Swift</p>
+				<p id="description">
+				This is my attempt on creating and working on iOS project daily. Inspired my Sam Vu's 100 Days of Swift, I wanted to test my limits as well. I want to challenge myself while enhancing my development skills at the same time. I am starting the project with something simple, using Sam Vu's first project; Tap Counter. From there, I aim to create apps of my idea. I use the first project to get a feel for the project scope.
+				</p>
+			</div> -->
 		</div>
 
 		<a name="interest"></a>
-		<div class="sec4">
-			<h1> My Interests </h1> 
+
+		<div class="sec3">
+			<h1 id="h2Font"> My Interests </h1> 
 			<p>
-				dlkfsjfkljasfljslfjs;fjsdkjkfjslkfjdlskjfkdsjkfjasklfjksljfjsjfkjs
+				Here are some hobbies I have. These are activities I do on my free time outside of class.
 			</p>
 			<div id = "container1">
 					<a href="http://www.500px.com/wongandydev" target="_blank">
-						<img src="images/photography.png" alt="Photography" align="center">
+						<img src="images/photographyGraphic2.png" alt="Photography" align="center">
 					</a>
 					<h3> Photography </h3>
 			</div>
 			<div id="container1">
 					<a href="http://www.github.com/wongandydev" target="_blank">
-						<img src="images/github.png" alt="GitHub" align="center">
+						<img src="images/githubGraphic.png" alt="GitHub" align="center">
 					</a>
 					<h3> Github </h3>
 			</div>
@@ -131,24 +155,60 @@
 					<h3> Writing </h3>
 			</div>
 		</div>
+
+		<a name="work"></a>
+
+		<div class="sec4">
+			<h1 id="h2Font"> Work  </h1>
+				
+			<h2> Viacom Inc. </h2>
+			<p id="container2"> As an intern at Viacom Inc, Andy worked on an AR project. He learned new coding architectures such as MVVM, and technologies for coding such as ReactiveSwift. Although was working on this project on his own, he worked frequently communicated with engineers in his team to futher develop his projects.
+			</p>
+
+
+			<h2> SavvyCloset </h2>
+			
+			<p id="container3"> As the intern at SavvyCloset Inc. I was the only developer on the team. I had the exposure from project management down to coding the app. When the founder asks for a new a feature or something to be implemented, I will have to manage the project and set deadlines for completion on each feature. From there, I would actually implement those features on my own. I worked on a new type of authentication, implementing the friend list, editing profiles, backend maintenace, and app traffic integration. 
+			</p>
+			
+			<h2> Freelance </h2>
+			<p id="container3">
+				I currently have a freelance profile setup for Fiverr and Upwork if you have any projects you are interested in having me work on, I would really appreciate the offer and will be extremely excited to work with you! 
+			</p>
+			<br>
+			<div id="container2">
+				<a id="rightspacing" href="http://bit.ly/2qtO53l" target="_blank"> Fiverr </a>
+			</div>
+			<div id="container2">
+				<a href="http://bit.ly/2r25QCQ" target="_blank"> Upwork </a>
+			</div>
+		</div>
+
 	</body>
 
 	<a name="contact"></a>
-
 	<footer>
 		<h3 id="h2Font"> Contact </h3>
 		<p>
-			<a href="mailto:andy@wongandy.com">andy@wongandy.com</a>
-			<br>
-			<a href="mailto:andy@wongandy.com">wongandy97@gmail.com</a>
-			<br>
-			<br>
-			<a href="http://www.linkedin.com/in/wongandydev" target="_blank"> Linkedin </a>
-			<a href = "http://github.com/wongandydev" target="_blank"> GitHub </a>
-			<a href="https://angel.co/wongandydev" target="_blank"> AngelList</a>
+			<a href="mailto:wongandy97@gmail.com">
+				<img src="images/icons/mail-32.png">
+				<br>
+				wongandy97@gmail.com
+			</a>
 			<br>
 			<br>
-			&copy Copyright 2017 Andy Wong. All Rights Reserved.
+			<a href="http://bit.ly/2oUC6XR" target="_blank">
+				<img src="images/icons/LinkedIn-32.png"> 
+			</a>
+			<a href = "http://bit.ly/2r3CF3n" target="_blank"> 
+				<img src="images/icons/GitHub_Filled-32.png">
+			</a>
+			<a href="http://bit.ly/2q7h2io" target="_blank"> 
+				<img src="images/icons/AngelList-32.png">
+			</a>
+			<br>
+			<br>
+			&copy Copyright 2016 - 2018 Andy Wong. All Rights Reserved.
 		</p>
 	</footer>
 

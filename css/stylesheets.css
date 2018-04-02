@@ -1,5 +1,9 @@
+html {
+    background-color: black;
+}
+
 header{
-	background: url("images/headImage4.jpg");
+	background: url("../images/headImage4.jpg");
 	background-size: cover;
 	/*To prevent there being any repeat appearance of the image*/
 	height: 100vh;
@@ -27,6 +31,11 @@ header a:visited{
 	text-decoration: none;
 }
 
+header a:hover{
+	opacity: 0.8;
+	/*color: rgb(243,255,255);*/
+}
+
 header h1{
 	color: rgb(214,214,214); 
 }
@@ -35,15 +44,14 @@ body{
 	background-color: white;
 	font-family: 'Raleway';
 	margin: 0px 0px 0px 0px;
+	/*Fade Effect*/
+	opacity: 1;
+	transition: 1s opacity;
 }
 
-/*nav select{
-	display: none;
-}*/
-
-@media (max-width: 800px) {
-	nav ul {display: none;}
-	nav select {display: inline-block;}
+body.fade-out{
+	opacity: 0;
+	transition: none;
 }
 
 p{
@@ -51,13 +59,17 @@ p{
 	font-size: 20px;
 }
 
-nav{
-	align-content: center;
-}
-
 a:link{
 	text-decoration: none;
 	display: inline-block;
+}
+
+nav ul{
+	visibility:visible;
+}
+
+@media only screen and (max-width: 700px){
+	nav{visibility: hidden;}
 }
 
 h1{
@@ -98,6 +110,11 @@ footer{
 
 }
 
+footer img{
+	width: 32px;
+	height: 32px;
+}
+
 footer a:link{
 	font-weight: lighter;
 	color: black;
@@ -106,7 +123,7 @@ footer a:link{
 }
 
 footer a:hover{ 
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 footer a:visited{
@@ -114,7 +131,6 @@ footer a:visited{
 }
 
 /*Class*/
-
 .navBar{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
 	position: fixed;
@@ -154,18 +170,19 @@ footer a:visited{
 .navBar a:active{
 	color: rgb(247,255,251);
 }
+/*.navbar{
+	margin-bottom: 0px;
+}*/
 
 .aboutMe{
 	background-color: black;
 	text-align: center;
-	padding: 20px;
-	padding-left: 90px;
-	padding-right: 90px; 
+	padding: 60px 90px 20px 90px;
 	font-family: 'Raleway';
 	margin: 0px auto;
 	word-wrap: break-word;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: 60px;
+	padding-left: 60px;
 }
 
 .aboutMe h2{
@@ -173,8 +190,13 @@ footer a:visited{
 }
 
 .aboutMe p{
-	font-size: 15px;
+	font-size: 16px;
+	padding-right: 50px;
+	padding-left: 50px;
 	font-weight: lighter;
+	text-align: center;
+	vertical-align: top;
+	word-wrap: break-word;
 }
 
 .contactme{
@@ -184,7 +206,8 @@ footer a:visited{
 .sec2{
 	background: rgb(120,120,120);
 	text-align: center;
-	padding: 1px;
+	padding-top: 60px;
+	/*padding: 1px;*/
 	margin: 0px auto;
 	padding-bottom: 30px;
 }
@@ -193,46 +216,71 @@ footer a:visited{
 	color: white;
 }
 
+.sec2 a:hover{
+	opacity: 0.8;
+}
+
 .sec3{
-	background-color: black;
+	background: black;
 	text-align: center;
-	margin: 0px auto;
 	padding: 1px;
+	margin: 0px auto;
+	padding-top: 60px;
 	padding-bottom: 30px;
 	padding-left: 40px;
 	padding-right: 40px;
 	word-wrap: break-word;
 }
 
-.sec3 a{
+.sec3 a:hover{
+	opacity: 0.9;
+}
+
+.sec3 h1{
+	font-size: 40px;
+	line-height: 20px;
+}
+
+.sec4{
+	background-color: rgb(69,69,69);
+	text-align: center;
+	margin: 0px auto;
+	padding: 1px;
+	padding-bottom: 30px;
+	padding-left: 70px;
+	padding-right: 70px;
+	word-wrap: break-word;
+}
+
+.sec4 a{
 	color: white;
 	padding: 10px;
 	text-align: center;
-	border-radius: 10px;
-	margin-left:  40px auto;
+	border-radius: 20px;
 	border-style: none;
+	width: 100px;
 	background-color: grey;
 	display: inline-block;
 }
 
-.sec4{
-	background: rgb(69,69,69);
-	text-align: center;
-	padding: 1px;
-	margin: 0px auto;
-	padding-bottom: 30px;
-	padding-left: 40px;
-	padding-right: 40px;
-	word-wrap: break-word;
-}
-
-.sec4 h1{
-	font-size: 40px;
-	line-height: 20px;
+.sec4 a:hover{
+	opacity: 0.9;
 
 }
+
+.sec4 p{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
 
 /*ID*/
+
+#quoteWrap{
+	padding-left: 400px;
+	padding-right: 400px;
+}
+
 
 #container1{ /*Tiles*/
 	display: inline-block;
@@ -244,6 +292,12 @@ footer a:visited{
 #container2{ 
 	display: inline-block;
 	/*border-style: dotted;*/
+	vertical-align: top;
+	text-align: justify-all;
+}
+
+#container3{ /*Tiles*/
+	display: inline-block;
 	vertical-align: top;
 	text-align: justify-all;
 }
@@ -274,13 +328,6 @@ footer a:visited{
 }
 
 
-/*#navBar{
-	display: inline;
-	float: left;
-	padding: 8px;
-	text-align: center;
-}*/
-
 #homeimage{
 	background-color: lightgrey;
 }
@@ -288,4 +335,8 @@ footer a:visited{
 #description {
 	font-size: 13px;
 	word-wrap: break-word;
+}
+
+#rightspacing{
+	margin-right: 30px;
 }
