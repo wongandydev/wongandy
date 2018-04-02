@@ -1,5 +1,9 @@
+html {
+    background-color: black;
+}
+
 header{
-	background: url("images/headImage4.jpg");
+	background: url("../images/headImage4.jpg");
 	background-size: cover;
 	/*To prevent there being any repeat appearance of the image*/
 	height: 100vh;
@@ -40,6 +44,14 @@ body{
 	background-color: white;
 	font-family: 'Raleway';
 	margin: 0px 0px 0px 0px;
+	/*Fade Effect*/
+	opacity: 1;
+	transition: 1s opacity;
+}
+
+body.fade-out{
+	opacity: 0;
+	transition: none;
 }
 
 p{
