@@ -153,8 +153,8 @@ footer a:visited{
 
 .aboutMe p{
 	font-size: 16px;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding-right: 30px;
+	padding-left: 30px;
 	font-weight: lighter;
 	text-align: center;
 	vertical-align: top;
@@ -207,33 +207,22 @@ footer a:visited{
 .sec4{
 	background-color: rgb(69,69,69);
 	text-align: center;
-	margin: 0px auto;
 	padding: 1px;
+	margin: 0px auto;
 	padding-bottom: 30px;
-	padding-left: 70px;
-	padding-right: 70px;
+	padding-left: 40px;
+	padding-right: 40px;
 	word-wrap: break-word;
-}
-
-.sec4 a{
-	color: white;
-	padding: 10px;
-	text-align: center;
-	border-radius: 20px;
-	border-style: none;
-	width: 100px;
-	background-color: grey;
-	display: inline-block;
 }
 
 .sec4 a:hover{
 	opacity: 0.9;
 }
 
-.sec4 p{
+/*.sec4 > p{
 	padding-left: 60px;
 	padding-right: 60px;
-}
+}*/
 
 
 /*ID*/
@@ -248,13 +237,24 @@ footer a:visited{
 	vertical-align: top;
 	text-align: justify-all;
 	width: 300px;
+	margin-left: 40px;
 }
 
 #container2{ 
 	display: inline-block;
-	/*border-style: dotted;*/
 	vertical-align: top;
-	text-align: justify-all;
+	text-align: center;
+}
+
+#container2 > a{
+	color: white;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+	border-style: none;
+	width: 100px;
+	background-color: grey;
+	display: inline-block;
 }
 
 #container3{ /*Tiles*/
@@ -296,8 +296,13 @@ footer a:visited{
 #description {
 	font-size: 13px;
 	word-wrap: break-word;
+	text-align: justify;
 }
 
 #rightspacing{
 	margin-right: 30px;
+}
+
+#justifyText{
+	text-align: justify;
 }
