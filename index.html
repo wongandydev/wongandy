@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+		h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+		(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+		})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-PLJ8NZK':true});</script>
+		  ga('require', 'GTM-PLJ8NZK');
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89377775-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-89377775-1');
+		
+		<style>.async-hide { opacity: 0 !important} </style>
+
+		</script>
+	
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-89377775-1', 'auto');
+		  ga('require', 'GTM-PLJ8NZK');
+		  ga('send', 'pageview');
+		</script>
+		<!-- End gtag.js -->		
 		<!-- Google Tag Manager -->
 		<script>
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -14,9 +44,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<title>Home Page | Andy Wong</title>
+		
+		<!-- Bootstrap & jQuery -- For NavBar -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -65,11 +100,11 @@
 				<div class="collapse navbar-collapse" id="navigationbar">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a class="active" href="#info"> Info </a></li>
+						<li><a href="#work"> Work </a></li>
 						<li><a class=".page-scroll" href="#projects"> Project </a></li>
 						<li><a href="#interest"> Interests </a></li>
-						<li><a href="#work"> Work </a></li>
 						<li><a href="#contact"> Contact </a></li>
-						<li><a href="/wongandy/Resume.pdf" target="_blank"> CV </a></li>
+						<li><a href="/wongandy/Resume.pdf" target="_blank"> Resume </a></li>
 					</ul>
 				</div>
 			</div>
@@ -91,6 +126,43 @@
 				Andy Wong is studying Computer Science at St. John's University. Since he was a child he has had a love for technology and computers. Currently, his goal is to get an internship for the summer of 2018. He is currently experience in iOS Development (Swift, ReactiveSwift), Web Development (HTML, CSS, Javascript, jQuery), Java, Python, and SQL. He is actively looking for opportunties, while applying for internships, he continues to pursue personal projects and to make his first iOS Application, EventChat, a greater sucess.
 			</p>
 		</div>
+
+		<a name="work"></a>
+
+		<div class="sec4">
+			<h1 id="h2Font"> Experience </h1>
+				
+			<div id="container1">
+				<!-- <a href="http://viacom.com" target="_blank">
+					<img src="images/viacom.jpg" alt="Viacom" align="center">
+				</a> -->
+				<h3> Viacom Inc. </h3>
+				<p id="description"> As an intern at Viacom Inc, Andy worked on an AR project. He learned new coding architectures such as MVVM, and technologies for coding such as ReactiveSwift. Although was working on this project on his own, he worked frequently communicated with engineers in his team to futher develop his projects.
+				</p>
+			</div>
+
+			<div id="container1">
+				<!-- <a href="http://savvycloset.com" target="_blank">
+					<img src="images/savvycloset.png" alt="SavvyCloset" align="center">
+				</a> -->
+				<h3> SavvyCloset </h3>
+				<p id="description"> As the intern at SavvyCloset Inc. I was the only developer on the team. I had the exposure from project management down to coding the app. When the founder asks for a new a feature or something to be implemented, I will have to manage the project and set deadlines for completion on each feature. From there, I would actually implement those features on my own. I worked on a new type of authentication, implementing the friend list, editing profiles, backend maintenace, and app traffic integration. 
+				</p>
+			</div>
+			
+			<div id="container1">
+				<h2> Freelance </h2>
+				<p id="description">
+					I currently have a freelance profile setup for Fiverr and Upwork if you have any projects you are interested in having me work on, I would really appreciate the offer and will be extremely excited to work with you! 
+				</p>
+				<br>
+				<div id="container2">
+					<a id="rightspacing" href="http://bit.ly/2qtO53l" target="_blank"> Fiverr </a>
+					<a href="http://bit.ly/2r25QCQ" target="_blank"> Upwork </a>
+				</div> 
+			</div>
+		</div>
+
 		<a name="projects"></a>
 
 		<div class="sec2">
@@ -110,6 +182,14 @@
 				</a>
 				<p>100 Days of Algorithms</p>
 				<p id="description"> An attempt to write code and solve at least one algorithm per day for 100 days. The goal of this project is to end up with 100 days of algorithm completion, enhance coding skills, learn syntax by changing programming languages every 25 algorithms and to just have some fun and learn! Currently, I have used Java. I am currently using Python, and plan to use Javascript next. I am still deciding on the final language.</p>
+			</div>
+
+			<div id="container1">
+				<a href="http://bit.ly/daysOfSwift" target="_blank">
+					<img src="images/swift.png" alt="Days of Swift" align="center">
+				</a>
+				<p>Days of Swift</p>
+				<p id="description"> An attempt on working with small swift projects to ideas. Anywhere from a small app tha locates where you are with MapView and CLLocation to a chat application or a tip calculator. From doing these projects, I get a better understanding of the technolgoies used in Swift from doing a small project instead of doing a big project and only learning so much.</p>
 			</div>
 
 <!-- 			<div id="container1">
@@ -155,35 +235,6 @@
 					<h3> Writing </h3>
 			</div>
 		</div>
-
-		<a name="work"></a>
-
-		<div class="sec4">
-			<h1 id="h2Font"> Work  </h1>
-				
-			<h2> Viacom Inc. </h2>
-			<p id="container2"> As an intern at Viacom Inc, Andy worked on an AR project. He learned new coding architectures such as MVVM, and technologies for coding such as ReactiveSwift. Although was working on this project on his own, he worked frequently communicated with engineers in his team to futher develop his projects.
-			</p>
-
-
-			<h2> SavvyCloset </h2>
-			
-			<p id="container3"> As the intern at SavvyCloset Inc. I was the only developer on the team. I had the exposure from project management down to coding the app. When the founder asks for a new a feature or something to be implemented, I will have to manage the project and set deadlines for completion on each feature. From there, I would actually implement those features on my own. I worked on a new type of authentication, implementing the friend list, editing profiles, backend maintenace, and app traffic integration. 
-			</p>
-			
-			<h2> Freelance </h2>
-			<p id="container3">
-				I currently have a freelance profile setup for Fiverr and Upwork if you have any projects you are interested in having me work on, I would really appreciate the offer and will be extremely excited to work with you! 
-			</p>
-			<br>
-			<div id="container2">
-				<a id="rightspacing" href="http://bit.ly/2qtO53l" target="_blank"> Fiverr </a>
-			</div>
-			<div id="container2">
-				<a href="http://bit.ly/2r25QCQ" target="_blank"> Upwork </a>
-			</div>
-		</div>
-
 	</body>
 
 	<a name="contact"></a>
