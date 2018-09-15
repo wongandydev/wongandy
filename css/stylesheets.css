@@ -222,10 +222,7 @@ footer a:visited{
 	text-align: center;
 	padding: 1px;
 	margin: 0px auto;
-	padding-top: 60px;
-	padding-bottom: 30px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding: 60px 0px 60px 0px; 
 	word-wrap: break-word;
 }
 
@@ -275,10 +272,6 @@ footer a:visited{
 }
 
 @media only screen and (max-width: 600px) {
-    #container1 {
-        width: 200px;
-    }
-    
     img{
 		align-content: center;
 		width: 200px;
@@ -286,6 +279,14 @@ footer a:visited{
 		position: relative;
 	}
 	
+	.aboutMe, .sec3, .sec4 {
+		padding: 60px 10px 60px 10px;
+	}
+
+	#container1 {
+		width: 80vw;
+	}
+
 	#container2 > a{
 		color: white;
 		padding: 10px;
@@ -295,6 +296,10 @@ footer a:visited{
 		width: 1000px;
 		background-color: grey;
 		display: inline-block;
+	}
+
+	header h1, h2 {
+		font-size: 5vw;
 	}
 }
 
