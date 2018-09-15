@@ -36,23 +36,24 @@ header a:hover{
 	/*color: rgb(243,255,255);*/
 }
 
-header h1{
+header h1,h2{
 	color: rgb(214,214,214); 
 }
 
 body{
-	background-color: white;
+	background-color: black;
 	font-family: 'Raleway';
 	margin: 0px 0px 0px 0px;
 	/*Fade Effect*/
 	opacity: 1;
 	transition: 1s opacity;
+	padding: 0px 100px 0px 100px;
 }
 
-body.fade-out{
+/* body.fade-out{
 	opacity: 0;
 	transition: none;
-}
+} */
 
 p{
 	text-align:center;
@@ -98,7 +99,7 @@ footer{
 	color: rgb(229,228,221);
 	font-family: Helvetica;
 	text-align: center;
-	background: rgb(120,120,120);
+	background: rgb(69,69,69);
 
 	/*Sticky Footer*/
 	position: relative;
@@ -117,17 +118,17 @@ footer img{
 
 footer a:link{
 	font-weight: lighter;
-	color: black;
-	opacity: 1;
+	color: white;
+	opacity: 0.7;
 	margin-right: 10px;
 }
 
 footer a:hover{ 
-	opacity: 0.7;
+	opacity: 1;
 }
 
 footer a:visited{
-	color: black;
+	color: white;
 }
 
 /*Class*/
@@ -177,12 +178,10 @@ footer a:visited{
 .aboutMe{
 	background-color: black;
 	text-align: center;
-	padding: 60px 90px 20px 90px;
+	padding: 60px 200px 20px 200px;
 	font-family: 'Raleway';
 	margin: 0px auto;
 	word-wrap: break-word;
-	padding-right: 60px;
-	padding-left: 60px;
 }
 
 .aboutMe h2{
@@ -333,10 +332,6 @@ footer a:visited{
 	font-size: 35px;
 }
 
-#thankyou{
-	font-size: 25px;
-}
-
 #bigtext{
 	color: white;
 	text-align: center;
@@ -354,7 +349,7 @@ footer a:visited{
 }
 
 #description {
-	font-size: 13px;
+	font-size: 18px;
 	word-wrap: break-word;
 	text-align: justify;
 }
