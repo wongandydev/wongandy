@@ -1,0 +1,181 @@
+/* HTML CSS */
+body{
+	font-family: 'Raleway';
+	text-align: center;
+	color: white;
+	background-color: rgb(60,60,64);
+	padding: 0;
+	margin: 0;
+	display: relative;
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: rgb(224,229,229);
+}
+
+a:hover{
+	color: rgb(249,255,254);
+}
+
+footer{
+	color: rgb(229,228,221);
+	font-family: Helvetica;
+	text-align: center;
+	background: rgb(120,120,120);
+
+	/*Sticky Footer*/
+	position: relative;
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	margin: 0px auto;
+	padding-top: 10px;
+
+}
+
+footer img{
+	width: 32px;
+	height: 32px;
+}
+
+footer a:link{
+	font-weight: lighter;
+	color: black;
+	opacity: 1;
+	margin-right: 10px;
+}
+
+footer a:hover{ 
+	opacity: 0.7;
+}
+
+footer a:visited{
+	color: black;
+}
+
+/* ID */
+#projectBody{
+	margin-top: 50px;
+}
+
+/* Classes */
+.projectCells {
+	text-align: center;
+	align-content: center;
+	margin-top: 10px;
+}
+
+.projectCell {
+	background-color: white;
+	color: white;
+	height: 700px;
+	width: 500px;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	margin: 10px;
+}
+
+.projectCell:hover {
+	background-color: dimgrey;
+}
+
+.projectCell:hover .description{
+	color: white
+}
+
+.projectCell img{
+	width: 400px;
+	height: 600px;
+	border-radius: 10px;
+}
+
+.projectCell-overlay{
+	width: 500px;
+	height: 700px;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+}
+
+.projectCellWeb {
+	background-color: white;
+	color: black;
+	height: 500px;
+	width: 700px;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	margin: 10px;
+}
+
+.projectCellWeb:hover {
+	background-color: dimgrey;
+}
+
+.projectCellWeb:hover .description{
+	color: white;
+}
+
+.projectCellWeb img{
+	width: 400px;
+	height: 300px;
+}
+
+.projectCellWeb-overlay{
+	width: 700px;
+	height: 500px;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+}
+
+.projectTypeName {
+	padding: 10px 0px 10px 0px;
+	background-color: darkgrey;
+}
+
+/* Nav Bar */
+.navBar{
+	overflow: hidden; /*Hides contents that extends beyong the box*/
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	font-family: 'Raleway:500', sans-serif;
+	/*background-color: black;
+	z-index: 1;*/
+}
+
+.navBar ul{
+	list-style-type: none; /*Removes the bullets in a list*/
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+
+.navBar ul li{
+	display: inline;
+	float: left;
+}
+
+.navBar ul li a{
+	display: block;
+	border-radius: 0px;
+	color: grey;
+	text-align: center;
+	padding: 14px 16px; /*top bottom are 14px left right are 16px*/
+	text-decoration: none; /*removes underline*/
+	font-size: 16px;
+}
+
+.navBar a:hover{
+	color: rgb(247,255,251);
+}
+
+.navBar a:active{
+	color: rgb(247,255,251);
+}
