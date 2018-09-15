@@ -47,7 +47,6 @@ body{
 	/*Fade Effect*/
 	opacity: 1;
 	transition: 1s opacity;
-	padding: 0px 100px 0px 100px;
 }
 
 /* body.fade-out{
