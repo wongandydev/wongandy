@@ -1,9 +1,9 @@
 html {
-    background-color: black;
+	background-color: white;
 }
 
 header{
-	background: url("../images/headImage4.jpg");
+	background: url("../images/photography.png");
 	background-size: cover;
 	/*To prevent there being any repeat appearance of the image*/
 	height: 100vh;
@@ -36,12 +36,12 @@ header a:hover{
 	/*color: rgb(243,255,255);*/
 }
 
-header h1,h2{
-	color: rgb(214,214,214); 
+header h1,h2, h3{
+	color: rgb(233,233,233); 
 }
 
 body{
-	background-color: black;
+	background-color: white;
 	font-family: 'Raleway';
 	margin: 0px 0px 0px 0px;
 	/*Fade Effect*/
@@ -135,7 +135,6 @@ footer a:visited{
 	overflow: hidden; /*Hides contents that extends beyong the box*/
 	position: fixed;
 	width: 100%;
-	height: 50px;
 	font-family: 'Raleway:500', sans-serif;
 	/*background-color: black;
 	z-index: 1;*/
@@ -175,7 +174,7 @@ footer a:visited{
 }*/
 
 .aboutMe{
-	background-color: black;
+	background-color: grey;
 	text-align: center;
 	padding: 60px 200px 60px 200px;
 	font-family: 'Raleway';
@@ -201,16 +200,17 @@ footer a:visited{
 }
 
 .sec2{
-	background: rgb(120,120,120);
+	/* background: rgb(120,120,120); */
 	text-align: center;
 	padding-top: 60px;
 	/*padding: 1px;*/
 	margin: 0px auto;
 	padding-bottom: 30px;
+	color: black
 }
 
 .sec2 h1{
-	color: white;
+	color: black;
 }
 
 .sec2 a:hover{
@@ -218,12 +218,13 @@ footer a:visited{
 }
 
 .sec3{
-	background: black;
+	/* background: black; */
 	text-align: center;
 	padding: 1px;
 	margin: 0px auto;
 	padding: 60px 0px 60px 0px; 
 	word-wrap: break-word;
+	color:black;
 }
 
 .sec3 a:hover{
@@ -236,12 +237,13 @@ footer a:visited{
 }
 
 .sec4{
-	background-color: rgb(69,69,69);
+	/* background-color: rgb(69,69,69); */
 	text-align: center;
 	padding: 1px;
 	margin: 0px auto;
 	padding: 60px 40px 30px 40px;
 	word-wrap: break-word;
+	color: black;
 }
 
 .sec4 a:hover{
@@ -269,6 +271,11 @@ footer a:visited{
 	text-align: justify-all;
 	width: 300px;
 	margin: 0px 20px 0px 20px;
+	color: black;
+}
+
+#container1 h3 {
+	color: black 
 }
 
 @media only screen and (max-width: 600px) {
@@ -288,7 +295,7 @@ footer a:visited{
 	}
 
 	#container2 > a{
-		color: white;
+		color: black;
 		padding: 10px;
 		text-align: center;
 		border-radius: 20px;
@@ -310,7 +317,7 @@ footer a:visited{
 }
 
 #container2 > a{
-	color: white;
+	color: black;
 	padding: 10px;
 	text-align: center;
 	border-radius: 20px;
@@ -334,6 +341,7 @@ footer a:visited{
 #h2Font{
 	font-family: 'Raleway';
 	font-size: 35px;
+	color: black;
 }
 
 #bigtext{
