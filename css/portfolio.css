@@ -3,7 +3,7 @@ body{
 	font-family: 'Raleway';
 	text-align: center;
 	color: white;
-	background-color: rgb(60,60,64);
+	background-color: rgb(255,255,255);
 	padding: 0;
 	margin: 0;
 	display: relative;
@@ -22,7 +22,7 @@ a:hover{
 
 /* ID */
 #projectBody{
-	margin-top: 70px;
+	margin-top: 60px;
 }
 
 /* Classes */
@@ -33,8 +33,6 @@ a:hover{
 }
 
 .projectCell {
-	color: rgb(60,60,64);
-	height: 700px;
 	width: 500px;
 	border-radius: 10px;
 	display: inline-block;
@@ -43,14 +41,6 @@ a:hover{
 	margin: 10px;
 }
 
-.projectCell:hover .projectCell-overlay img{
-	width: 350px;
-	height: 600px;
-}
-
-.projectCell:hover .projectCell-overlay div{
-	color: white;
-}
 
 .projectCell img{
 	width: 300px;
@@ -59,10 +49,22 @@ a:hover{
 
 .projectCell-overlay{
 	width: 500px;
-	height: 700px;
 	vertical-align: middle;
 	text-align: center;
 	display: table-cell;
+	color: black;
+}
+
+.projectCell-overlay p {
+
+	text-align: justify;
+}
+
+
+.projectCell-overlay:hover img {
+	color: dimgray;
+	width: 340px;
+	height: 600px;
 }
 
 .projectCellWeb {
@@ -100,7 +102,9 @@ a:hover{
 
 .projectTypeName {
 	padding: 10px 0px 10px 0px;
-	background-color: darkgrey;
+	margin: 0px;
+	background-color: rgb(245, 245, 245);
+	color: black
 }
 
 /* Nav Bar */
