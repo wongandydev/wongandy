@@ -77,7 +77,7 @@ footer a:visited{
 	width: 500px;
 	border-radius: 10px;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: text-top;
 	padding: 50px;
 	margin: 10px;
 }
@@ -85,7 +85,7 @@ footer a:visited{
 
 .projectCell img{
 	width: 300px;
-	height: 550px;
+	height: 300px;
 }
 
 .projectCell-overlay{
@@ -97,7 +97,6 @@ footer a:visited{
 }
 
 .projectCell-overlay p {
-
 	text-align: justify;
 }
 
@@ -105,7 +104,7 @@ footer a:visited{
 .projectCell-overlay:hover img {
 	color: dimgray;
 	width: 340px;
-	height: 600px;
+	height: 340px;
 }
 
 .projectCellWeb {
