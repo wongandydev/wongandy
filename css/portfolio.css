@@ -151,7 +151,19 @@ footer a:visited{
 /* Mobile */
 
 @media only screen and (max-width: 600px) {
-    
+	.projectCell {
+		width: 85vw;
+		margin: 0px;
+		padding: 10px;
+	}
+
+    .projectCellWeb {
+		width: 80vw;
+	}
+
+	.projectCell-overlay {
+		width: 82vw;
+	}
 }
 
 /* Nav Bar */
