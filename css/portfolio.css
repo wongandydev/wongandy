@@ -3,7 +3,7 @@ body{
 	font-family: 'Raleway';
 	text-align: center;
 	color: white;
-	background-color: rgb(60,60,64);
+	background-color: rgb(255,255,255);
 	padding: 0;
 	margin: 0;
 	display: relative;
@@ -20,9 +20,50 @@ a:hover{
 	color: rgb(249,255,254);
 }
 
+footer{
+	color: rgb(229,228,221);
+	font-family: Helvetica;
+	text-align: center;
+	background: rgb(69,69,69);
+
+	/*Sticky Footer*/
+	position: relative;
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	margin: 0px auto;
+	padding-top: 10px;
+}
+
+footer img{
+	width: 32px;
+	height: 32px;
+}
+
+footer a:link{
+	font-weight: lighter;
+	color: white;
+	opacity: 0.7;
+	margin-right: 10px;
+}
+
+footer a:hover{ 
+	opacity: 1;
+}
+
+footer a:visited{
+	color: white;
+}
+
 /* ID */
 #projectBody{
-	margin-top: 70px;
+	margin-top: 60px;
+}
+
+#contact{
+	font-family: 'Raleway';
+	font-size: 35px;
+	color: black;
 }
 
 /* Classes */
@@ -33,36 +74,37 @@ a:hover{
 }
 
 .projectCell {
-	color: rgb(60,60,64);
-	height: 700px;
 	width: 500px;
 	border-radius: 10px;
 	display: inline-block;
-	vertical-align: middle;
-	padding: 10px;
+	vertical-align: text-top;
+	padding: 50px;
 	margin: 10px;
 }
 
-.projectCell:hover .projectCell-overlay img{
-	width: 350px;
-	height: 600px;
-}
-
-.projectCell:hover .projectCell-overlay div{
-	color: white;
-}
 
 .projectCell img{
 	width: 300px;
-	height: 550px;
+	height: 300px;
 }
 
 .projectCell-overlay{
 	width: 500px;
-	height: 700px;
 	vertical-align: middle;
 	text-align: center;
 	display: table-cell;
+	color: black;
+}
+
+.projectCell-overlay p {
+	text-align: justify;
+}
+
+
+.projectCell-overlay:hover img {
+	color: dimgray;
+	width: 340px;
+	height: 340px;
 }
 
 .projectCellWeb {
@@ -100,7 +142,27 @@ a:hover{
 
 .projectTypeName {
 	padding: 10px 0px 10px 0px;
-	background-color: darkgrey;
+	margin: 0px;
+	background-color: rgb(245, 245, 245);
+	color: black
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+	.projectCell {
+		width: 85vw;
+		margin: 0px;
+		padding: 10px;
+	}
+
+    .projectCellWeb {
+		width: 80vw;
+	}
+
+	.projectCell-overlay {
+		width: 82vw;
+	}
 }
 
 /* Nav Bar */
