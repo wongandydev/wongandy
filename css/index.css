@@ -3,7 +3,7 @@ html {
 }
 
 header{
-	background: url("../images/photography.png");
+	background: url("../images/headImage1.jpg");
 	background-size: cover;
 	/*To prevent there being any repeat appearance of the image*/
 	height: 100vh;
