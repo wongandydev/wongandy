@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import { site } from '../config';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = site.title, description = site.description } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top"
+          ><span class="dot" aria-hidden="true"></span>{site.brand}<span class="tld">{site.tld}</span></a
+        >
+        <div class="nav-links">
+          {site.nav.map((item) => <a href={item.href}>{item.label}</a>)}
+          <a class="cta" href={`mailto:${site.email}`}>Get in touch</a>
+        </div>
+      </div>
+    </nav>
+
+    <slot />
+
+    <footer>
+      <div class="wrap foot">
+        <span>© <span>{year}</span> {site.name} · {site.location}</span>
+        <span>Built with Astro &amp; a folder full of Markdown.</span>
+      </div>
+    </footer>
+
+    <script>
+      // Reveal-on-scroll for anything marked .reveal
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>

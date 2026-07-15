@@ -1,0 +1,92 @@
+---
+import { site, heroCode } from '../config';
+
+const TOKCLASS: Record<string, string> = {
+  kw: 'tok-kw', type: 'tok-type', prop: 'tok-prop',
+  str: 'tok-str', num: 'tok-num', com: 'tok-com', fn: 'tok-fn', pl: '',
+};
+
+const esc = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+
+// Server-rendered full snippet — the no-JS / reduced-motion fallback.
+const fullCode = heroCode
+  .map((line, i) => {
+    const ln = `<span class="ln">${i + 1}</span>`;
+    const toks = line
+      .map(([t, txt]) => `<span class="${TOKCLASS[t] ?? ''}">${esc(txt)}</span>`)
+      .join('');
+    return ln + toks;
+  })
+  .join('\n');
+
+const [before, after] = site.hero.headline.split('{accent}');
+---
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">{site.hero.eyebrow}</p>
+      <h1>{before}<span class="accent" set:html={site.hero.accent.replace(' ', '&nbsp;')} />{after}</h1>
+      <p class="lede" set:html={site.hero.lede}></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href={`mailto:${site.email}`}>Contact me</a>
+        <a class="btn btn-ghost" href={site.resume}>View resume ↓</a>
+      </div>
+    </div>
+    <div class="code-window" aria-label="Swift code introducing Andy Wong">
+      <div class="code-bar">
+        <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+        <span class="filename">AndyWong.swift</span>
+        <span class="spacer"></span>
+      </div>
+      <div class="code-body" id="code" set:html={fullCode}></div>
+      <script type="application/json" id="hero-code" set:html={JSON.stringify(heroCode)}></script>
+    </div>
+  </div>
+</header>
+
+<script>
+  type Tok = [string, string];
+  const TOKCLASS: Record<string, string> = {
+    kw: 'tok-kw', type: 'tok-type', prop: 'tok-prop',
+    str: 'tok-str', num: 'tok-num', com: 'tok-com', fn: 'tok-fn', pl: '',
+  };
+  const dataEl = document.getElementById('hero-code');
+  const codeEl = document.getElementById('code');
+  if (dataEl && codeEl) {
+    const CODE: Tok[][] = JSON.parse(dataEl.textContent || '[]');
+    const esc = (s: string) =>
+      s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Server already rendered the full snippet; only animate when motion is allowed.
+    if (!reduced) {
+      let li = 0, ti = 0, ci = 0, out = '';
+      const caret = '<span class="caret" aria-hidden="true"></span>';
+      const lineStart = (i: number) => `<span class="ln">${i + 1}</span>`;
+      out = lineStart(0);
+      const step = () => {
+        const line = CODE[li];
+        if (ti < line.length) {
+          const [t, txt] = line[ti];
+          if (ci < txt.length) {
+            const chunk = txt.slice(ci, ci + 2);
+            ci += 2;
+            out += `<span class="${TOKCLASS[t] ?? ''}">${esc(chunk)}</span>`;
+          } else { ti++; ci = 0; }
+        } else {
+          li++; ti = 0; ci = 0;
+          if (li < CODE.length) out += '\n' + lineStart(li);
+        }
+        if (li < CODE.length) {
+          codeEl.innerHTML = out + caret;
+          const empty = CODE[li] && CODE[li].length === 0;
+          setTimeout(step, empty ? 60 : 14 + Math.random() * 26);
+        } else {
+          codeEl.innerHTML = out + caret;
+        }
+      };
+      setTimeout(step, 350);
+    }
+  }
+</script>
