@@ -1,0 +1,158 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import { site } from '../config';
+
+// Everything below is driven by the file-based content layer.
+const metrics = (await getCollection('metrics')).sort((a, b) => a.data.order - b.data.order);
+
+const experience = (await getCollection('experience')).sort((a, b) => b.data.order - a.data.order);
+const releases = await Promise.all(
+  experience.map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
+);
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const workGroups = [
+  { key: 'client', label: 'client work', items: projects.filter((p) => p.data.category === 'client') },
+  { key: 'personal', label: 'personal projects', items: projects.filter((p) => p.data.category === 'personal') },
+].filter((g) => g.items.length > 0);
+
+const skills = (await getCollection('skills')).sort((a, b) => a.data.order - b.data.order);
+const writing = (await getCollection('writing')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base>
+  <Hero />
+
+  <!-- Metrics -->
+  <div class="metrics" aria-label="Career highlights">
+    <div class="wrap metrics-grid">
+      {metrics.map((m) => (
+        <div class="metric reveal">
+          <div class="val">{m.data.value}</div>
+          <div class="lbl">{m.data.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">experience</p>
+        <h2>Version history</h2>
+        <p>Every release of my career, App Store style — what shipped, and what changed because of it.</p>
+      </div>
+
+      {releases.map(({ entry, Content }) => (
+        <article class="release reveal">
+          <div class="meta">
+            <span class={entry.data.current ? 'ver' : 'ver archived'}>{entry.data.versionLabel}</span><br />
+            {entry.data.dateRange}{entry.data.location && (<><br />{entry.data.location}</>)}
+          </div>
+          <div>
+            <h3>{entry.data.company}</h3>
+            <p class="role">{entry.data.role}</p>
+            <div class="release-body"><Content /></div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- Selected work -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">work</p>
+        <h2>Selected work</h2>
+        <p>Products I’ve shipped — for clients and for the fun of it.</p>
+      </div>
+
+      {workGroups.map((group) => (
+        <div class="work-group">
+          <h3>{group.label}</h3>
+          <div class="work-grid">
+            {group.items.map((p) => {
+              const Tag = p.data.link ? 'a' : 'div';
+              const attrs = p.data.link
+                ? { href: p.data.link, target: '_blank', rel: 'noopener' }
+                : {};
+              return (
+                <Tag class="work-card reveal" {...attrs}>
+                  <div class="thumb">
+                    <Image src={p.data.cover} alt={p.data.coverAlt || p.data.title} width={480} height={300} />
+                  </div>
+                  <div class="body">
+                    <span class="name">{p.data.title}{p.data.link && <span class="arrow">↗</span>}</span>
+                    <p>{p.body?.trim()}</p>
+                    {p.data.tech.length > 0 && (
+                      <div class="chips">
+                        {p.data.tech.map((t) => <span class="chip">{t}</span>)}
+                      </div>
+                    )}
+                  </div>
+                </Tag>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">skills</p>
+        <h2>The toolchain</h2>
+      </div>
+      <div class="skills-grid">
+        {skills.map((group) => (
+          <div class="skill-card reveal">
+            <h4>{group.data.title}</h4>
+            <div class="chips">
+              {group.data.items.map((item) => <span class="chip">{item}</span>)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Elsewhere -->
+  <section id="elsewhere">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">elsewhere</p>
+        <h2>Around the internet</h2>
+      </div>
+      <div class="links-grid">
+        {writing.map((entry) => (
+          <a class="link-card reveal" href={entry.data.url} target="_blank" rel="noopener">
+            <span class="name">{entry.data.title} <span class="arrow">↗</span></span>
+            <p>{entry.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow">contact</p>
+      <h2>{site.contact.heading}</h2>
+      <p>{site.contact.body}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href={`mailto:${site.email}`}>{site.email}</a>
+        <a class="btn btn-ghost" href={site.socials.linkedin} target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <p class="email-line">{site.contact.note}</p>
+    </div>
+  </section>
+</Base>
