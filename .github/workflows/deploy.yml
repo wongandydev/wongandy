@@ -29,6 +29,8 @@ jobs:
         with:
           # The Astro project lives in the site/ subdirectory of the repo.
           path: site
+          # Astro 7 requires Node >=22.12; the action defaults to Node 20.
+          node-version: 22
 
   deploy:
     needs: build
