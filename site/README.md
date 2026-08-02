@@ -1,43 +1,28 @@
-# Astro Starter Kit: Minimal
+# site
 
-```sh
-npm create astro@latest -- --template minimal
-```
+The Astro project behind [wongandy.com](https://wongandy.com). See the
+[repo README](../README.md) for the full overview.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Commands
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+Run from this directory. Requires Node >= 22.12.
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Install dependencies                             |
+| `npm run dev`             | Dev server at `localhost:4321`                   |
+| `npm run build`           | Production build to `./dist/`                    |
+| `npm run preview`         | Serve the build locally before deploying         |
+| `npm run astro -- --help` | Astro CLI help                                   |
 
-## 👀 Want to learn more?
+## Structure
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `src/config.ts` — identity, hero copy, contact, nav, the typed Swift snippet
+- `src/content.config.ts` — collection schemas, documented inline
+- `src/content/` — the content itself: one file per role, project, link, skill
+  group, and metric
+- `src/assets/images/` — project imagery, optimized by Astro at build time
+- `public/` — copied verbatim into the build (`CNAME`, `Resume.pdf`, favicons)
+
+Adding content means adding a file to the right `src/content/` directory — the
+page picks it up automatically.
