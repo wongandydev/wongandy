@@ -3,7 +3,7 @@ name: Deploy site to GitHub Pages
 on:
   # Deploy on every push to the default branch...
   push:
-    branches: [master]
+    branches: [main]
   # ...and allow manual runs from the Actions tab.
   workflow_dispatch:
 
